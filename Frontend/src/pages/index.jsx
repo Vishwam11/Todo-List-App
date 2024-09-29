@@ -33,7 +33,7 @@ const Todo = () => {
   /** handle fetch */
   const handleFetch = async () => {
     try {
-      const response = await axios.get("/todo");
+      const response = await axios.get("https://deploy-server-azure.vercel.app/todo");
       if (response?.data?.code === 200) {
         const newTodo = response?.data?.data?.map((todo) => ({
           ...todo,
@@ -52,8 +52,8 @@ const Todo = () => {
     try {
       const value = { name: todo };
       const response = isUpdate
-        ? await axios.put(`todo/update/${isUpdate._id}`, value)
-        : await axios.post("todo/create", value);
+        ? await axios.put(`https://deploy-server-azure.vercel.app/todo/update/${isUpdate._id}`, value)
+        : await axios.post("https://deploy-server-azure.vercel.app/todo/create", value);
       if (response?.data?.code === 200) {
         toast.success(response?.data?.message);
         setTodo("");
@@ -69,7 +69,7 @@ const Todo = () => {
   /* Handles Delete Event */
   const handleDelete = async (id) => {
     try {
-      const response = await axios.delete(`todo/delete/${id}`);
+      const response = await axios.delete(`https://deploy-server-azure.vercel.app/todo/delete/${id}`);
 
       if (response?.data?.code === 200) {
         setTodos(todos.filter((todo) => todo._id !== id));
