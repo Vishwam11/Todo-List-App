@@ -47,10 +47,10 @@ This project was created to demonstrate the following skills:
 
 ## How to Run the Project Locally:
 1. Clone the repository.
-2. Navigate to the `server` directory and run `npm install` to install the dependencies.
-3. Navigate to the `client` directory and run `npm install`.
+2. Navigate to the `Backend` directory and run `npm install` to install the dependencies.
+3. Navigate to the `Frontend` directory and run `npm install`.
 4. Create a `.env` file in the `server` directory with your MongoDB connection string.
-5. Start the Node.js server by running `npm run dev` inside the `server` directory.
-6. Start the React client by running `npm start` inside the `client` directory.
+5. Start the Node.js server by running `npm run dev` inside the `Backend` directory.
+6. Start the React client by running `npm start` inside the `Frontend` directory.
 7. Access the app locally at `http://localhost:3000`.
 
