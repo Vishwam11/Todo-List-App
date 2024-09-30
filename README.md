@@ -45,19 +45,6 @@ This project was created to demonstrate the following skills:
    - Delete a to-do item
 6. Updated the UI to reflect changes in the to-do list.
 
-## Additional Considerations:
-- **Error Handling:** Implemented error handling for both server-side and client-side operations.
-- **Testing:** Included unit tests using Jest.
-- **Styling:** Custom styles were created, with optional use of a CSS framework like Bootstrap.
-- **Deployment:** The application is deployed on [Vercel](https://vercel.com/) for live testing.
-
-## Evaluation Criteria:
-- **Code Quality:** Clean, well-structured code with comments and meaningful variable names.
-- **Functionality:** Correct implementation of CRUD operations and UI updates.
-- **Performance:** Efficient use of resources and responsiveness of the application.
-- **Best Practices:** Adherence to coding conventions and best practices for Node.js, React.js, and MongoDB.
-- **Problem-Solving:** Ability to troubleshoot and resolve issues.
-
 ## How to Run the Project Locally:
 1. Clone the repository.
 2. Navigate to the `server` directory and run `npm install` to install the dependencies.
